@@ -5,6 +5,9 @@ Resources:
     Type: 'Aliyun::Serverless::Service'
     Properties:
       Description: This is feishu-yuque service
+      LogConfig: Auto
+      Policies:
+        - AliyunLogFullAccess
     approval:
       Type: 'Aliyun::Serverless::Function'
       Properties:

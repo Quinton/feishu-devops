@@ -1,0 +1,2 @@
+RUNTIME nodejs10
+RUN npm install json2md got --registry=https://registry.npm.taobao.org
