@@ -2,6 +2,9 @@
 
 - 飞书审批同步至语雀
 
+## 流程图
+![流程图](./docs/流程图.png)
+
 ## 快速开始
 
 ### 飞书环境配置
@@ -15,7 +18,7 @@ $ cd feishu-yuque/approval
 $ npm install
 ```
 
-### 环境变量
+### 环境变量设置
 
 - FS_APP_ID: 飞书自定义审批 app_id
 - FS_APP_SECRET: 飞书自定义审批 app_secret
