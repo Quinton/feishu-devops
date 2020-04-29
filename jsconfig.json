@@ -1,0 +1,5 @@
+{
+  "compilerOptions": {
+    "baseUrl": "/Users/lucker/.aliyun-serverless/lib/nodejs/node_modules"
+  }
+}
