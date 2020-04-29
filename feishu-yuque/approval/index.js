@@ -2,14 +2,14 @@ const getRawBody = require('raw-body');
 const json2md = require("json2md");
 const got = require('got');;
 
-const FS_APP_ID = process.env.FS_APP_ID || 'cli_9e23a5c25938100e';
-const FS_APP_SECRET = process.env.FS_APP_SECRET || 'WnkFEhAwiUzjBSUN48B1LhGNfYReGcVb';
-const FS_APPPROVAL_CODE = process.env.FS_APPPROVAL_CODE || 'FAA55736-8B77-46BA-BDBF-7E3F4E225375';
-const YQ_X_AUTH_TOKEN = process.env.YQ_X_AUTH_TOKEN || 'AqsjR5eCzOMq7SwFNRQQU0MBn5ZfxnhsZ8K1Crbk';
+const FS_APP_ID = process.env.FS_APP_ID;
+const FS_APP_SECRET = process.env.FS_APP_SECRET;
+const FS_APPPROVAL_CODE = process.env.FS_APPPROVAL_CODE;
+const YQ_X_AUTH_TOKEN = process.env.YQ_X_AUTH_TOKEN;
+const YUQUE_NAMWSPACE = process.env.YUQUE_NAMWSPACE;
 
 let tenant_access_token = null;
 const now = Date.now();
-const YUQUE_NAMWSPACE = 'repos/xsix6';
 
 // 获取飞书token,时效2小时
 // TODO token 持久化和失效机制 reids实现

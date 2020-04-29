@@ -16,6 +16,12 @@ Resources:
         Timeout: 60
         MemorySize: 512
         CodeUri: feishu-yuque/approval
+        EnvironmentVariables:
+          FS_APP_ID: ''
+          FS_APP_SECRET: ''
+          FS_APPPROVAL_CODE: ''
+          YQ_X_AUTH_TOKEN: ''
+          YUQUE_NAMWSPACE: ''
       Events:
         httpTrigger:
           Type: HTTP
