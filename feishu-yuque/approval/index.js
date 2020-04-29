@@ -145,11 +145,7 @@ module.exports.handler = async function(req, resp, context) {
                 return p;
             }, {})
             // 开始同步信息到语雀
-            let _markdown = (formList.map(f => f.name)).join(' | ');
-            _markdown += '|\n| --- | --- |\n|';
-            _markdown += (formList.map(f => f.value)).join(' | ');
-            _markdown = `| ${_markdown} |`
-            console.log(json2md({ table: { headers: Object.keys(formMap), rows: [formMap] } }))
+            console.log('[feishu-yuque.approval] 开始创建文档slug: ', `${detail.serial_number}${detail.user_id}`);
             await publishYuQueDoc({
                 title: `${formList[0].value}-${formList[1].value}`,
                 slug: `${detail.serial_number}${detail.user_id}`,
